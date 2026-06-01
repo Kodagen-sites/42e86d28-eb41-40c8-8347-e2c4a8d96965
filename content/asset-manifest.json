@@ -1,0 +1,14 @@
+{
+  "bucket": "site-assets",
+  "projectId": "42e86d28-eb41-40c8-8347-e2c4a8d96965",
+  "ref": "",
+  "images": {
+    "scene-1-end": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/42e86d28-eb41-40c8-8347-e2c4a8d96965/images/scene-1-end.png",
+    "scene-1-start": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/42e86d28-eb41-40c8-8347-e2c4a8d96965/images/scene-1-start.png"
+  },
+  "videos": {
+    "scene-1": "https://zykgxmubadvmlxpkqrzd.supabase.co/storage/v1/object/public/site-assets/42e86d28-eb41-40c8-8347-e2c4a8d96965/videos/scene-1.mp4"
+  },
+  "frames": {},
+  "updatedAt": "2026-06-01T12:42:56.183Z"
+}

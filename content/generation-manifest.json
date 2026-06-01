@@ -1,0 +1,71 @@
+{
+  "brand": {
+    "name": "Genesis AI",
+    "tagline": "Launch a business in minutes, not months",
+    "url": "https://genesis-ai.com",
+    "category": "AI platform / SaaS — automated business creation"
+  },
+  "buildMode": "landing",
+  "archetype": {
+    "id": "G",
+    "name": "Mixed-Media Hybrid",
+    "renderMode": "scrub-cinematic"
+  },
+  "hero": {
+    "style": "Scroll-paced video",
+    "component": "ScrubHero",
+    "renderer": "ScrollCanvas",
+    "overlay": "HeroScrollText",
+    "chapters": 4,
+    "frameCount": 192,
+    "fps": 24,
+    "source": "frames-manifest.json (frameUrlTemplate, Supabase CDN)"
+  },
+  "colorPalette": {
+    "id": "pearl-platinum",
+    "name": "Pearl & Platinum",
+    "luminance": "light",
+    "swatches": {
+      "bg": "#FBFBFA",
+      "surface": "#EAEAEA",
+      "accent": "#9CA0A8",
+      "contrast": "#3A3D45"
+    }
+  },
+  "typography": {
+    "pair": "Syne + Inter",
+    "title": "Syne",
+    "body": "Inter",
+    "delivery": "@import in app/globals.css (babel.config.js precludes next/font)"
+  },
+  "voice": {
+    "family": "V6",
+    "name": "Systems",
+    "notes": "Precise, technical, no fabricated statistics."
+  },
+  "sections": [
+    { "id": "hero", "anchor": null, "component": "ScrubHero" },
+    { "id": "capabilities", "anchor": "#capabilities", "component": "Capabilities" },
+    { "id": "how", "anchor": "#how", "component": "HowItWorks" },
+    { "id": "about", "anchor": "#about", "component": "AboutSection" },
+    { "id": "contact", "anchor": "#contact", "component": "CtaContact" }
+  ],
+  "navigation": {
+    "type": "anchor-scroll",
+    "logoHref": "/",
+    "items": ["#capabilities", "#how", "#about", "#contact"]
+  },
+  "routes": ["/", "/privacy", "/terms"],
+  "seo": ["robots.ts", "sitemap.ts"],
+  "assets": {
+    "mode": "live-generate",
+    "scenes": ["scene-1"],
+    "images": ["scene-1-start", "scene-1-end"],
+    "videos": ["scene-1"],
+    "frames": { "scene-1": 192 },
+    "storage": "supabase",
+    "manifests": ["asset-manifest.json", "frames-manifest.json"]
+  },
+  "skipped": ["admin", "middleware", "database", "booking", "cart"],
+  "generatedAt": "2026-06-01T12:45:00.000Z"
+}

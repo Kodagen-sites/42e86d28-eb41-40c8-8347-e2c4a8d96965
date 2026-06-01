@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* ScrollCanvas loader reads these — light pearl bg, graphite fg */
+  --bg-color: #fbfbfa;
+  --fg-color: #3a3d45;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* sticky/pinned ancestors must use clip, not hidden (production rule 1/23) */
+  overflow-x: clip;
+}
+
+body {
+  background-color: #fbfbfa;
+  color: #3a3d45;
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.font-display {
+  font-family: "Syne", ui-sans-serif, system-ui, sans-serif;
+}
+
+::selection {
+  background: #3a3d45;
+  color: #fbfbfa;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
